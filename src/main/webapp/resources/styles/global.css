@@ -1,0 +1,164 @@
+
+/* ClearFix Class */
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+.cf:after {
+    clear:both;
+}
+.cf {
+    zoom:1;
+}
+
+/*--- LAYOUT ---*/
+body {
+  background:#EEEFF1;
+  color:#666; 
+  font-family: "helvetica neue", arial, helvetica, freesans, "liberation sans", "numbus sans l", sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {font-weight: normal;}
+strong {font-weight: bold;}
+em {text-decoration: italic;}
+
+a {
+  color: #3078CA; 
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+#container {
+	width:960px; 
+	margin:0 auto; 
+	overflow:hidden;
+}
+/* HEADER */
+header {
+  padding-top: 10px;
+}
+header .logo, header .logo a {
+  display: block;
+  height: 69px;
+  text-indent:-9999px;
+  width: 200px;
+}
+
+/* CONTENT */
+#content {
+    background: none repeat scroll 0 0 white;
+    border-bottom: 1px solid #DDDDDD;
+    border-radius: 6px 6px 6px 6px;
+	position: relative;
+}
+h2.head {
+	border-bottom: 1px solid #F2F3F4;
+	font-size: #777;
+	font-weight: bold;
+    margin-top: 10px;
+    overflow: hidden;
+    padding: 7px 30px;
+}
+
+/* LOGIN */
+#login {
+	padding: 30px;
+}
+#login nav ul{
+	text-align: center;
+}
+#login nav ul li {
+	display: inline-block;
+	overflow: hidden;
+}
+#login nav ul li a {
+	background: #D8D8D8 url("../images/sprite-providers.png") no-repeat 10px 0;
+    border: 1px solid #BBB;
+    border-radius: 2px;
+    color: #444;
+	display: block;
+    font-weight: bold;
+	padding: 10px 10px 10px 50px;
+    text-align: left;
+    text-decoration: none;
+	width: 150px;
+}
+#login nav ul li a:hover {
+	text-decoration: none;
+}
+#login nav ul li a.twitter {
+    background-position: 10px -90px;
+}
+#login nav ul li a.facebook {
+    background-position: 10px -45px;
+}
+#login nav ul li a.linkedin {
+    background-position: 10px 5px;
+}
+
+.pagination {
+	border-top: 1px solid #F2F3F4;
+    margin-top: 10px;
+	padding: 7px 30px;
+	text-align: right;
+}
+.pagination li {
+	background: #D8D8D8;
+	border: 1px solid #BBB;
+    border-radius: 2px;
+	display: inline-block;
+	font-weight: normal;
+	overflow: hidden;
+}
+.pagination li a {
+    color: #444;
+	display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+.pagination li a:hover, .pagination li a.active {
+	color: #FFF;
+    background: #444;
+}
+.pagination li a.active {
+	cursor: default;
+}
+
+
+#loader {
+	background: #FFF url("../images/transparent-ajax-loader.gif") no-repeat 50% 50%;
+    border-radius: 6px 6px 6px 6px;
+	display: none;
+	left: 0;
+    padding: 10px 30px;
+	position: absolute;
+	top: 0;
+	width:900px;
+}
+.button {
+	background: #D8D8D8;
+	border: 1px solid #BBB;
+    border-radius: 2px;
+	color: #444;
+	display: inline-block;
+    font-weight: bold;
+	padding: 5px 10px;
+	overflow: hidden;
+}
+.button-blue {
+    border: 1px solid #20619B;
+    border-radius: 3px;
+    color: #FFF;
+	display: inline-block;
+	padding: 8px 100px;
+	background: #5494CF;
+    white-space: nowrap;
+}
+.hidden {
+	display: none !important;
+}
